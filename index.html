@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 YUE MORALES | Premium Roblox Pets & Accounts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-blue: #00f7ff;
+            --neon-purple: #b300ff;
+            --neon-green: #00ff9d;
+            --dark-bg: #0f0f1f;
+            --card-bg: #1a1a2e;
+            --text-light: #f0f0f0;
+            --section-spacing: 6rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--dark-bg);
+            color: var(--text-light);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 🌌 Background Animation */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: radial-gradient(ellipse at bottom, #0a0a20 0%, #000000 100%);
+            overflow: hidden;
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(0, 247, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 247, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            animation: grid-scroll 100s linear infinite;
+        }
+
+        @keyframes grid-scroll {
+            0% { background-position: 0 0; }
+            100% { background-position: 1000px 1000px; }
+        }
+
+        /* 🚀 Glow Effects */
+        .glow-text {
+            text-shadow: 0 0 10px currentColor;
+            animation: glow-pulse 2s infinite alternate;
+        }
+
+        @keyframes glow-pulse {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        /* 🛠️ Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section {
+            padding: var(--section-spacing) 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '✦';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--neon-blue);
+            opacity: 0.7;
+        }
+
+        .section-title::before {
+            left: -30px;
+        }
+
+        .section-title::after {
+            right: -30px;
+        }
+
+        /* 🏆 Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--neon-blue);
+        }
+
+        /* 💎 Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
+            color: white;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 247, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* 📜 Notice Box */
+        .notice {
+            background: rgba(26, 26, 46, 0.8);
+            border-left: 3px solid var(--neon-pink);
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 700px;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        .notice::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.1), transparent);
+            animation: notice-scan 3s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes notice-scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .notice strong {
+            color: var(--neon-pink);
+        }
+
+        /* 📱 Social Buttons */
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 2rem;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        .social-btn i {
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+
+        /* 🎮 Games Grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 247, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 247, 255, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--neon-pink);
+        }
+
+        .game-card:hover::before {
+            opacity: 1;
+        }
+
+        .game-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--neon-blue);
+        }
+
+        .game-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .game-card p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* 📸 Success Stories */
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+        }
+
+        .success-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .success-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .success-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--neon-pink);
+        }
+
+        .success-card-content {
+            padding: 1.5rem;
+        }
+
+        .success-card h3 {
+            color: var(--neon-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .success-card p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .success-card .rating {
+            color: var(--neon-green);
+            font-size: 0.8rem;
+        }
+
+        /* 🛡️ Legitimacy Panel */
+        .legitimacy-panel {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 800px;
+            position: relative;
+            border: 1px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+        }
+
+        .legitimacy-panel p {
+            margin-bottom: 1rem;
+        }
+
+        .legitimacy-panel i {
+            color: var(--neon-green);
+            margin-right: 10px;
+        }
+
+        .legitimacy-panel a {
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .legitimacy-panel a:hover {
+            text-decoration: underline;
+        }
+
+        /* 👾 Footer */
+        footer {
+            background: rgba(15, 15, 31, 0.9);
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(179, 0, 255, 0.3);
+        }
+
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 2rem 0;
+        }
+
+        .footer-social a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            color: var(--neon-pink);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* 📱 Mobile Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --section-spacing: 4rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-title::before,
+            .section-title::after {
+                display: none;
+            }
+
+            .games-grid,
+            .success-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.8rem;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-btn {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
+
+        /* ✨ Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-purple);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--neon-pink);
+        }
+
+     /* 🌌 Ultra-Enhanced Carousel Styles */
+     .carousel-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 3rem auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 0 50px rgba(179, 0, 255, 0.5);
+        perspective: 1000px;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1f 100%);
+        overflow: hidden;
+    }
+
+    .carousel-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        box-sizing: border-box;
+        height: 500px;
+        position: relative;
+    }
+
+    /* Holographic Effect */
+    .holographic {
+        background: radial-gradient(ellipse at center, 
+            rgba(0, 247, 255, 0.1) 0%, 
+            rgba(179, 0, 255, 0.05) 50%, 
+            transparent 70%);
+    }
+    
+    .hologram-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, 
+            transparent 48%, 
+            rgba(0, 247, 255, 0.1) 49%, 
+            rgba(0, 247, 255, 0.1) 51%, 
+            transparent 52%);
+        background-size: 10px 10px;
+        animation: hologram 3s linear infinite;
+        pointer-events: none;
+    }
+    
+    @keyframes hologram {
+        0% { background-position: 0 0; }
+        100% { background-position: 30px 30px; }
+    }
+
+    /* Cyber Frame Effect */
+    .cyber-frame {
+        border: 2px solid transparent;
+        position: relative;
+    }
+    
+    .cyber-frame-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid transparent;
+        background: 
+            linear-gradient(90deg, var(--neon-pink), var(--neon-blue)) border-box;
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) padding-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        animation: borderPulse 4s linear infinite;
+    }
+    
+    .data-stream {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, 
+            transparent, 
+            var(--neon-blue), 
+            var(--neon-pink), 
+            transparent);
+        animation: dataStream 3s linear infinite;
+    }
+    
+    @keyframes dataStream {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+
+    /* Floating Effect */
+    .floating {
+        perspective: 1000px;
+    }
+    
+    .float-orbit {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        border: 2px dashed rgba(0, 247, 255, 0.3);
+        border-radius: 50%;
+        animation: orbit 20s linear infinite;
+    }
+    
+    @keyframes orbit {
+        from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+        to { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+    }
+
+    .carousel-item img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s ease;
+    }
+
+    /* Glowing Image Effect */
+    .glowing-img {
+        filter: drop-shadow(0 0 15px var(--neon-pink));
+        animation: glowPulse 3s infinite alternate;
+    }
+    
+    @keyframes glowPulse {
+        0% { filter: drop-shadow(0 0 10px var(--neon-pink)); }
+        100% { filter: drop-shadow(0 0 25px var(--neon-blue)); }
+    }
+
+    /* Pulsing Image Effect */
+    .pulsing-img {
+        animation: pulseScale 4s infinite alternate;
+    }
+    
+    @keyframes pulseScale {
+        0% { transform: scale(0.95); }
+        100% { transform: scale(1.05); }
+    }
+
+    /* Floating Image Effect */
+    .floating-img {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        background: linear-gradient(to top, rgba(15, 15, 31, 0.95), transparent);
+        color: white;
+        z-index: 3;
+    }
+
+    .carousel-caption h3 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 0 15px currentColor;
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+
+    /* Enhanced Navigation Buttons */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(26, 26, 46, 0.8);
+        color: var(--neon-pink);
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+    }
+
+    .carousel-btn:hover {
+        background: var(--neon-pink);
+        color: white;
+        box-shadow: 0 0 30px var(--neon-pink);
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    .btn-glow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: var(--neon-pink);
+        opacity: 0;
+        z-index: -1;
+        animation: btnGlow 2s infinite;
+    }
+
+    @keyframes btnGlow {
+        0%, 100% { opacity: 0; transform: scale(0.8); }
+        50% { opacity: 0.3; transform: scale(1.2); }
+    }
+
+    .prev {
+        left: 2rem;
+    }
+
+    .next {
+        right: 2rem;
+    }
+
+    /* Animated Dots */
+    .carousel-dots {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 1rem;
+        z-index: 10;
+    }
+
+    .carousel-dots .dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel-dots .dot::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .carousel-dots .dot.active::before {
+        opacity: 1;
+    }
+
+    .carousel-dots .dot.active {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px var(--neon-blue);
+    }
+
+    /* Particle Effects */
+    .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+
+    .particles::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at 20% 30%, var(--neon-pink) 0%, transparent 2%),
+            radial-gradient(circle at 80% 70%, var(--neon-blue) 0%, transparent 2%),
+            radial-gradient(circle at 40% 60%, var(--neon-green) 0%, transparent 2%);
+        background-size: 200px 200px;
+        animation: particlesMove 20s linear infinite;
+    }
+
+    @keyframes particlesMove {
+        from { transform: translateY(0) translateX(0); }
+        to { transform: translateY(-100px) translateX(100px); }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+        .carousel-image-container {
+            height: 400px;
+        }
+        
+        .carousel-caption h3 {
+            font-size: 1.5rem;
+        }
+        
+        .carousel-caption p {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .carousel-image-container {
+            height: 350px;
+            padding: 15px;
+        }
+        
+        .carousel-caption {
+            padding: 1.5rem;
+        }
+        
+        .carousel-btn {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+        
+        .prev {
+            left: 1rem;
+        }
+        
+        .next {
+            right: 1rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .carousel-image-container {
+            height: 300px;
+        }
+        
+        .carousel-caption h3 {
+            font-size: 1.2rem;
+        }
+        
+        .carousel-caption p {
+            font-size: 0.9rem;
+        }
+        
+        .carousel-dots .dot {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- 🌌 Background Animation -->
+    <div class="bg-animation"></div>
+
+    <!-- 🚀 Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>YUE MORALES</h1>
+                <p class="tagline">Premium Roblox Pets & Accounts</p>
+                
+                <!-- 📜 Notice Box -->
+                <div class="notice">
+                    <p><i class="fas fa-exclamation-triangle"></i> <strong>🚨 BUSINESS ACCOUNT ONLY 🚨</strong></p>
+                    <p>This account is strictly for business transactions. To confirm your engagement, please vouch by leaving a comment and reacting with ❤️. This helps prove legitimacy for future transactions.</p>
+                </div>
+                
+                <!-- 💎 CTA Buttons -->
+                <div>
+                    
+                    <a href="#success" class="btn btn-primary"><i class="fas fa-gem"></i> SHOP NOW</a>  
+                    <a href="#verify" class="btn btn-secondary"><i class="fas fa-images"></i> VIEW PROOF</a>
+                </div>
+                
+                <!-- 📱 Social Buttons -->
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/profile.php?id=100090008636992" class="social-btn" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Business FB
+                    </a>
+                    <a href="https://www.facebook.com/ry.delacruz.890549" class="social-btn" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Main FB
+                    </a>
+                    <a href="https://www.tiktok.com/@yuemorales123" class="social-btn" target="_blank">
+                        <i class="fab fa-tiktok"></i> TikTok
+                    </a>
+                    <a href="https://www.roblox.com/communities/34465870/PH-GameClub" class="social-btn" target="_blank">
+                        <i class="fas fa-gamepad"></i> Roblox Group
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(15, 15, 31, 0.7);">
+        <div class="container">
+            <h2 class="section-title">WELCOME EVERYONE</h2>
+            <p class="text-center glow-text" style="color: var(--neon-green);">YUE SHOP</p>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Item 1 with holographic effect -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-container holographic">
+                            <img src="image/Carousel/image1.png" alt="Pets Go Huge" class="glowing-img">
+                            <div class="hologram-overlay"></div>
+                            <div class="particles"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="glow-text" style="color: var(--neon-pink);">Buy</h3>
+                            <p class="glow-text" style="color: var(--neon-blue);">now</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 with cyberpunk frame -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-container cyber-frame">
+                            <img src="image/Carousel/image2.png" alt="Arm Wrestler Giga" class="pulsing-img">
+                            <div class="cyber-frame-border"></div>
+                            <div class="data-stream"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="glow-text" style="color: var(--neon-green);">Buy</h3>
+                            <p class="glow-text" style="color: var(--neon-purple);">now</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 with floating effect -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-container floating">
+                            <img src="image/Carousel/image4.png" alt="Pet Simulator 99 Exclusive" class="floating-img">
+                            <div class="float-orbit"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="glow-text" style="color: var(--neon-blue);">Buy</h3>
+                            <p class="glow-text" style="color: var(--neon-pink);">now</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Navigation Buttons -->
+                <button class="carousel-btn prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="btn-glow"></span>
+                </button>
+                <button class="carousel-btn next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="btn-glow"></span>
+                </button>
+                
+                <!-- Animated Dots -->
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 📸 Success Stories -->
+        <section id="success1" class="section" style="background: rgba(15, 15, 31, 0.7);">
+            <div class="container">
+                <h2 class="section-title">PROOF OF LEGITIMACY</h2>
+                <p class="text-center">Verified transactions & happy customers</p>
+                
+                <div class="success-grid">
+                    <div class="success-card">
+    
+                        <img src="image/Prof-trans/1.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/2.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/3.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/4.png" alt="Legitimacy Proof">
+                        <div class="success-card-content">
+                        </div>
+                    </div>
+                    <div class="success-card">
+                        <img src="image/Prof-trans/5.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/6.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/7.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/8.png" alt="Legitimacy Proof">
+                        <div class="success-card-content">
+                        </div>
+                    </div>
+                    <div class="success-card">
+                        <img src="image/Prof-trans/9.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/10.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/11.png" alt="Legitimacy Proof">
+                        <img src="image/Prof-trans/12.png" alt="Legitimacy Proof">
+                        <div class="success-card-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- 📸 Success Stories -->
+    <section id="success" class="section" style="background: rgba(15, 15, 31, 0.7);">
+        <div class="container">
+            <h2 class="section-title">PETS FOR SALE</h2>
+            <p class="text-center">Verified transactions & happy customers</p>
+            
+            <div class="success-grid">
+                <div class="success-card">
+
+                    <img src="image/Pet99/2.png" alt="Legitimacy Proof">
+                    <img src="image/Pet99/1.png" alt="Legitimacy Proof">
+                    <div class="success-card-content">
+                        <h3>PETS SIMUALTOR 99</h3>
+                        <h3>Huges</h3>
+                        <p>Completed deal for LOW-TEAR Huges pet in Pets Simulator 99</p>
+                        <p class="rating">₱8 - $0.13 </p>
+                    </div>
+                </div>
+                <div class="success-card">
+                    <img src="image/Petg/1.png" alt="Legitimacy Proof">
+                    <img src="image/Petg/2.png" alt="Legitimacy Proof">
+                    <div class="success-card-content">
+                        <h3>PETS GO</h3>
+                        <h3>Huges</h3>
+                        <p>Completed deal for LOW-TEAR Huges pet in Pets Go</p>
+                        <p class="rating">₱3 - $0.01</p>
+                    </div>
+                </div>
+                <div class="success-card">
+                    <img src="image/Aws/1.png" alt="Legitimacy Proof">
+                    <img src="image/Aws/2.png" alt="Legitimacy Proof">
+                    <div class="success-card-content">
+                        <h3>ARM WRESTLER SIMULATOR</h3>
+                        <h3>GIGA</h3>
+                        <p>Completed deal for 275% GIGA pet in Arm Wrestler Simulator</p>
+                        <p class="rating">₱5 - $0.08</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>BUY HERE</h1>
+                
+                <!-- 📜 Notice Box -->
+                <div class="notice">
+                    <p><i class="fas fa-exclamation-triangle"></i> <strong>🚨 BUSINESS ACCOUNT ONLY 🚨</strong></p>
+                    <p>MESSGAE ME HERE</p>
+                </div>
+                
+                <!-- 📱 Social Buttons -->
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/profile.php?id=100090008636992" class="social-btn" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>   
+                    <a href="https://www.tiktok.com/@yuemorales123" class="social-btn" target="_blank">
+                        <i class="fab fa-tiktok"></i> TikTok
+                    </a>
+                    <a href="https://www.roblox.com/users/4536881997/profile" class="social-btn" target="_blank">
+                        <i class="fas fa-gamepad"></i> Roblox
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- 🛡️ Legitimacy Section -->
+    <section id="verify" class="section">
+        <div class="container">
+            <h2 class="section-title">VERIFIED SELLER</h2>
+            <p class="text-center">Trusted transactions with proof and more</p>
+            
+            <div class="legitimacy-panel">
+                <p><i class="fas fa-check-circle"></i> <strong>Lost FB Account – Legitimacy Proof (2023-2024):</strong></p>
+                <p>Full verification available for review to confirm my identity and transaction history.</p>
+                <a href="https://www.facebook.com/share/p/1ATGxQawyf/" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View Verification Document
+                </a>
+            </div>
+
+            <div class="legitimacy-panel">
+                <p><i class="fas fa-check-circle"></i> <strong>FB Account – Legitimacy Proof (2025):</strong></p>
+                <p>Full verification available for review to confirm my identity and transaction history.</p>
+                <a href="https://www.facebook.com/share/p/15y562QZ8b/" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View Verification Document
+                </a>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="https://www.facebook.com/profile.php?id=100090008636992" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> START TRANSACTION
+                </a>
+            </div>
+
+            
+        </div>
+    </section>
+
+   
+    <!-- 👾 Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">YUE MORALES</div>
+            <p>Pets & Accounts</p>
+            
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=100090008636992" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@yuemorales123" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.roblox.com/communities/34465870/PH-GameClub" target="_blank"><i class="fas fa-gamepad"></i></a>
+            </div>
+            
+            <p class="copyright">© 2024 YUE MORALES | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for elements when they come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.game-card, .success-card, .legitimacy-panel');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.5s ease';
+                observer.observe(el);
+            });
+        };
+        
+        // Initialize animations when page loads
+        window.addEventListener('DOMContentLoaded', animateOnScroll);
+    </script>
+
+<script>
+    // Enhanced Carousel functionality with 3D effects
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('.carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const dotsContainer = document.querySelector('.carousel-dots');
+        
+        let currentIndex = 0;
+        const totalItems = items.length;
+        
+        // Create animated dots
+        items.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            
+            // Add animation element to dot
+            const dotAnim = document.createElement('span');
+            dotAnim.classList.add('dot-anim');
+            dot.appendChild(dotAnim);
+            
+            dotsContainer.appendChild(dot);
+        });
+        
+        // Update carousel position with 3D effect
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Add perspective effect to current item
+            items.forEach((item, index) => {
+                if (index === currentIndex) {
+                    item.style.transform = 'translateZ(0)';
+                    item.style.opacity = '1';
+                } else {
+                    item.style.transform = 'translateZ(-50px)';
+                    item.style.opacity = '0.7';
+                }
+            });
+            
+            // Update active dot
+            document.querySelectorAll('.dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+        
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+        
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateCarousel();
+        }
+        
+        // Button events
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        // Auto-advance with variable speed
+        let slideInterval = setInterval(nextSlide, 6000);
+        
+        // Pause on hover with smooth resume
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+            carousel.style.transition = 'transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+        });
+        
+        carousel.addEventListener('mouseleave', () => {
+            carousel.style.transition = 'transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+            slideInterval = setInterval(nextSlide, 6000);
+        });
+        
+        // Initialize
+        updateCarousel();
+        
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+        
+        // Add swipe support for touch devices
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, {passive: true});
+        
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, {passive: true});
+        
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) nextSlide();
+            if (touchEndX > touchStartX + 50) prevSlide();
+        }
+    });
+</script>
+</body>
+</html>
